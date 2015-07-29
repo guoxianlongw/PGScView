@@ -14,6 +14,9 @@
 		DAB8C3E41B5E441700CFA390 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB8C3E31B5E441700CFA390 /* Images.xcassets */; };
 		DAB8C3E71B5E441700CFA390 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAB8C3E51B5E441700CFA390 /* LaunchScreen.xib */; };
 		DAB8C3F31B5E441700CFA390 /* PGScViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8C3F21B5E441700CFA390 /* PGScViewDemoTests.m */; };
+		DAB8C4021B5E452200CFA390 /* PGScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8C4011B5E452200CFA390 /* PGScrollView.m */; };
+		DABBCECA1B609DE50085E4AB /* PGScView.m in Sources */ = {isa = PBXBuildFile; fileRef = DABBCEC91B609DE50085E4AB /* PGScView.m */; };
+		DABBCECC1B60C8AE0085E4AB /* transform.png in Resources */ = {isa = PBXBuildFile; fileRef = DABBCECB1B60C8AE0085E4AB /* transform.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DAB75C221B5F7C1300B15A5F /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		DAB8C3D31B5E441600CFA390 /* PGScViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PGScViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB8C3D71B5E441600CFA390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB8C3D81B5E441600CFA390 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,11 @@
 		DAB8C3EC1B5E441700CFA390 /* PGScViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PGScViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB8C3F11B5E441700CFA390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB8C3F21B5E441700CFA390 /* PGScViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGScViewDemoTests.m; sourceTree = "<group>"; };
+		DAB8C4001B5E452200CFA390 /* PGScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGScrollView.h; sourceTree = "<group>"; };
+		DAB8C4011B5E452200CFA390 /* PGScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGScrollView.m; sourceTree = "<group>"; };
+		DABBCEC81B609DE50085E4AB /* PGScView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGScView.h; sourceTree = "<group>"; };
+		DABBCEC91B609DE50085E4AB /* PGScView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGScView.m; sourceTree = "<group>"; };
+		DABBCECB1B60C8AE0085E4AB /* transform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transform.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,7 @@
 				DAB8C3DB1B5E441600CFA390 /* AppDelegate.m */,
 				DAB8C3DD1B5E441600CFA390 /* ViewController.h */,
 				DAB8C3DE1B5E441600CFA390 /* ViewController.m */,
+				DAB8C3FF1B5E44ED00CFA390 /* PGScrollView */,
 				DAB8C3E01B5E441700CFA390 /* Main.storyboard */,
 				DAB8C3E31B5E441700CFA390 /* Images.xcassets */,
 				DAB8C3E51B5E441700CFA390 /* LaunchScreen.xib */,
@@ -117,6 +127,19 @@
 				DAB8C3F11B5E441700CFA390 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAB8C3FF1B5E44ED00CFA390 /* PGScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				DABBCEC81B609DE50085E4AB /* PGScView.h */,
+				DABBCEC91B609DE50085E4AB /* PGScView.m */,
+				DAB8C4001B5E452200CFA390 /* PGScrollView.h */,
+				DAB8C4011B5E452200CFA390 /* PGScrollView.m */,
+				DAB75C221B5F7C1300B15A5F /* Header.h */,
+				DABBCECB1B60C8AE0085E4AB /* transform.png */,
+			);
+			path = PGScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABBCECC1B60C8AE0085E4AB /* transform.png in Resources */,
 				DAB8C3E21B5E441700CFA390 /* Main.storyboard in Resources */,
 				DAB8C3E71B5E441700CFA390 /* LaunchScreen.xib in Resources */,
 				DAB8C3E41B5E441700CFA390 /* Images.xcassets in Resources */,
@@ -220,7 +244,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB8C3DF1B5E441600CFA390 /* ViewController.m in Sources */,
+				DABBCECA1B609DE50085E4AB /* PGScView.m in Sources */,
 				DAB8C3DC1B5E441600CFA390 /* AppDelegate.m in Sources */,
+				DAB8C4021B5E452200CFA390 /* PGScrollView.m in Sources */,
 				DAB8C3D91B5E441600CFA390 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +444,7 @@
 				DAB8C3F81B5E441700CFA390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAB8C3F91B5E441700CFA390 /* Build configuration list for PBXNativeTarget "PGScViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +453,7 @@
 				DAB8C3FB1B5E441700CFA390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
