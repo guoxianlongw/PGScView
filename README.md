@@ -3,4 +3,4 @@
 
 
 
-![gifImage](https://raw.githubusercontent.com/guoxianlongw/PGScrollViewss/master/pic2.png)
+![gifImage](https://raw.githubusercontent.com/guoxianlongw/PGScView/master/PGSPic.gif)
