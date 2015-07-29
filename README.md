@@ -4,3 +4,6 @@
 
 
 ![gifImage](https://raw.githubusercontent.com/guoxianlongw/PGScView/master/PGSPic.gif)
+
+![PGScView](https://raw.githubusercontent.com/guoxianlongw/PGScView/master/1.png)
+
